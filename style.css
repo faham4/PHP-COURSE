@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body{
+    background-color: #b9d2e5;
+   
+    
+}
+
+/* header start */
+
+header{
+    width: 100%;
+    padding: 25px;
+     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 30px;
+    background-color: rgba(0, 0, 0, .1);
+    position: relative;
+    
+    
+  
+}
+header nav a{
+    color:#000;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 300    ;
+    transition: 0.3s;
+    cursor: pointer;
+   
+}
+.btn{ 
+    padding: 5px 10px;
+    margin-left: 20px;
+    border: 2px solid transparent;
+    background-color: #0067B8;
+    cursor: pointer;
+    font-size: 15px;
+ 
+}
+
+a.active{
+    background:#0067B8;
+    border-radius: 5px;
+}
+a:hover{
+    background:#0067B8;
+    border-radius: 5px;
+}
+
+
+/* responsive header */
+
+
+/* Responsive header */
+@media (max-width: 768px) {
+    header nav {
+        display: none; /* Hide navigation by default */
+        flex-direction: column; /* Stack nav items */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #eee;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+    }
+
+    header nav.active {
+        display: flex; 
+    }
+
+    header .menu-toggle {
+        display: block; 
+        background: #fc721e;
+        color: white;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+    }
+}
+.menu-toggle {
+    display: none; 
+}
+/* header end */
+.upload-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px 0px #aaa;
+    margin-top: 10%;
+    
+}
+h2 {
+    text-align: center;
+}
+.file-input {
+    margin: 10px 0;
+}
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0067B8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit-btn:hover {
+    background-color: #69b8f5;
+}
+/* responsive .file-upload-input */
+@media (max-width: 768px) {
+    .file-input{
+        width: 40%; 
+        padding: 15px; 
+        font-size: 18px; 
+        margin-top: 10%; 
+    }
+}
